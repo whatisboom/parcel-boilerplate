@@ -32,7 +32,7 @@ describe('Reducers', () => {
         type: 'UNKNOWN_TYPE',
         data: [{}]
       };
-      let result = reducer.data(undefined, action);
+      const result = reducer.data(undefined, action);
       expect(result.length).toBe(0);
     });
   });
