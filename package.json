@@ -12,14 +12,15 @@
   "author": "",
   "license": "ISC",
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/enzymeSetup.js",
+    "setupTestFrameworkScriptFile": "./config/enzymeSetup.js",
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/jest-typescript-preprocessor.js"
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest-typescript-preprocessor.js"
     },
     "testMatch": [
       "**/*.test.(ts|tsx|js)"
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
+    "eslint": "^4.17.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -37,7 +39,6 @@
   "devDependencies": {
     "babel-jest": "^22.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",

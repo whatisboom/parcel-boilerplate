@@ -1,8 +1,7 @@
 {
   "plugins": [
     "transform-runtime",
-    "transform-class-properties",
-    "object-rest-spread"
+    "transform-class-properties"
   ],
   "presets": [
     "env",
