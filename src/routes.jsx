@@ -6,10 +6,9 @@ import {
 
 import Home from './containers/home';
 
-export const Routes = (props) => (
+export const Routes = () =>
   <Router>
     <Route exact path="/" component={Home} />
-  </Router>
-);
+  </Router>;
 
 export default Routes;

@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-/* global process */
 const newPackage = process.argv[2];
 const dest = path.resolve(`../${newPackage}`);
 const blacklist = fs.readFileSync('./.gitignore', 'utf-8').split('\n');
