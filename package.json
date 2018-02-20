@@ -7,8 +7,8 @@
     "clone": "node ./clone.js",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --quiet ./src/*",
     "test": "./node_modules/.bin/jest",
-    "tdd": "node ./node_modules/jest/bin/jest.js --watchAll",
-    "start": "parcel src/index.html"
+    "tdd": "./node_modules/.bin/jest --watchAll",
+    "start": "./node_modules/.bin/parcel src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +32,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.17.0",
+    "parcel-bundler": "^1.6.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
