@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Heading from '../components';
+import { Heading } from '../components';
 
 export default class Home extends Component {
 
