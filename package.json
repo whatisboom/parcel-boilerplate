@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clone": "node ./clone.js",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --quiet ./src/*",
     "test": "./node_modules/.bin/jest",
     "tdd": "node ./node_modules/jest/bin/jest.js --watchAll",
