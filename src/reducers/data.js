@@ -1,4 +1,4 @@
-import { SET_DATA } from '../actions/types';
+import { SET_DATA } from '../actions';
 
 export default function data(data = [], action) {
   switch (action.type) {

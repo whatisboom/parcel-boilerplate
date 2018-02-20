@@ -1,4 +1,4 @@
-import { SET_DATA } from '../actions/types';
+import { SET_DATA } from '../actions';
 import * as reducer from './index';
 
 describe('Reducers', () => {

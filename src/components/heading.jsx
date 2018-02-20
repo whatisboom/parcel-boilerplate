@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 export default class Heading extends Component {
   static propTypes = {
-    children: PropTypes.any
+    children: string
   }
 
   render() {
