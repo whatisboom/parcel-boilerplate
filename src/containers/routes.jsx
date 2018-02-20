@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import { Home } from './containers';
+import { Home } from './home';
 
 export const Routes = () =>
   <Router>
