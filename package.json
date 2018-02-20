@@ -2,13 +2,13 @@
   "name": "parcel-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "scripts": {
     "clone": "node ./clone.js",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --quiet ./src/*",
     "test": "./node_modules/.bin/jest",
     "tdd": "./node_modules/.bin/jest --watchAll",
-    "start": "./node_modules/.bin/parcel src/index.html"
+    "start": "./node_modules/.bin/parcel ./src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -16,16 +16,14 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./config/enzymeSetup.js",
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
+      "js",
+      "jsx"
     ],
     "transform": {
-      "^.+\\.js$": "babel-jest",
-      "^.+\\.(ts|tsx)$": "<rootDir>/config/jest-typescript-preprocessor.js"
+      "^.+\\.jsx?$": "babel-jest"
     },
     "testMatch": [
-      "**/*.test.(ts|tsx|js)"
+      "**/*.test.(js|jsx)"
     ]
   },
   "dependencies": {
@@ -51,6 +49,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.2.2",
+    "node-sass": "^4.7.2",
     "typescript": "^2.7.1"
   }
 }
